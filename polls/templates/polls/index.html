@@ -1,5 +1,11 @@
-<h1>These are the available polls</h1>
-<h3>Click on the Title to vote</h3>
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'poll/style.css' %}" type="text/css">
+
+
+<h1>Welcome to poll.com</h1>
+<h3>These are the available polls, Click on the any Title to vote</h3>
+<hr>
 {% if latest_question_list %}
   <ul>
     {% for question in latest_question_list%}
